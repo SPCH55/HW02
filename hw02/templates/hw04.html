@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>ClickHouse Data</title></head>
+<body>
+<h2>ข้อมูลจาก ClickHouse</h2>
+<table border="1">
+  <tr>
+    <th>Date</th>
+    <th>Clicked</th>
+    <th>Int1</th>
+    <th>Int2</th>
+  </tr>
+  {% for row in rows %}
+  <tr>
+    <td>{{ row.0 }}</td>
+    <td>{{ row.1 }}</td>
+    <td>{{ row.2 }}</td>
+    <td>{{ row.3 }}</td>
+  </tr>
+  {% endfor %}
+</table>
+</body>
+</html>
+
